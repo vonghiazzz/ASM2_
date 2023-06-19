@@ -1,10 +1,7 @@
 <%@page import="model.User"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.ResultSet" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="database.JDBCUtil" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -102,38 +99,15 @@
         <div class="navbar-nav">
           <a class="nav-link active text-dark" onclick="window.location.href='index.jsp'" href="#">Home</a>
          
-           <div class="dropdown">
+        <!--    <div class="dropdown">
 		    <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown">Category</a>
 		    <div class="dropdown-menu bg-black">
-		      <% 
-		        Connection connection = null;
-		        Statement statement = null;
-		        ResultSet resultSet = null;
-		  
-		        try {
-		          connection = JDBCUtil.getConnection();
-		          statement = connection.createStatement();
-		          String query = "SELECT * FROM category";
-		          resultSet = statement.executeQuery(query);
-		  
-		          while (resultSet.next()) {
-		            String categoryId = resultSet.getString("categoryId");
-		            String categoryName = resultSet.getString("categoryName");
-		      %>
-		            <a class="dropdown-item text-light" href="#"><%=categoryName%></a> 
-		            System.out.println(<%=categoryName %>);
-		      <% 
-		          }
-		        } catch (Exception e) {
-		          e.printStackTrace();
-		        } finally {
-		          JDBCUtil.closeConnection(connection);
-		          if (statement != null) statement.close();
-		          if (resultSet != null) resultSet.close();
-		        }
-		      %>
+		    
+		            <a class="dropdown-item text-light" href="#"></a> 
+		            System.out.println();
+		   
 		    </div>
-		  </div>
+		  </div> -->
          <% 
       // Assuming 'user' is an object containing user details, including the role
 	      	User u = (User) session.getAttribute("user");
