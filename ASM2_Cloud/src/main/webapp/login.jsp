@@ -89,8 +89,8 @@
       <div class="collapse navbar-collapse col-md-8" id="navbarMain">
         <div class="navbar-nav">
           <a class="nav-link active text-dark" onclick="window.location.href='homepage.php'" href="#">Home</a>
-          <div class="dropdown">
-            <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown">Category</a>
+        <!--   <div class="dropdown">
+             <a href="#" class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown">Category</a>
             <!--dropdown để sổ r sổ tiếp -->
             <!-- <div class="dropdown-menu bg-black"> -->
 
@@ -100,7 +100,7 @@
 
             <!-- </div> -->
 
-          </div>
+        <!--   </div>-->
           <% 
       // Assuming 'user' is an object containing user details, including the role
 	      	User u = (User) session.getAttribute("user");
