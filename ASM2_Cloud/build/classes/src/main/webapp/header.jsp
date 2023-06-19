@@ -68,7 +68,7 @@
 				}
 				if(user==null){
 				%>
-				 <button onclick="confirmBox()" class="btn btn-outline-secondary" type="button">Welcome!</button>
+				 <button class="btn btn-outline-secondary" type="button">Welcome!</button>
 				<button onclick="window.location.href='login.jsp'" class="btn btn-outline-secondary"
             type="button">Login</button>
 				
@@ -76,7 +76,7 @@
 				<div class="row d-flex justify-content-between">
 				
 				  <div class="col d-flex justify-content-end">
-				    <button onclick="window.location.href='.jsp'" class="btn btn-outline-secondary w-100" type="button">Welcome, <%=user.getFullname()%></a>
+				    <button onclick="window.location.href='index.jsp'" class="btn btn-outline-secondary w-100" type="button">Welcome, <%=user.getFullname()%></button>
 				  </div>
 				  <div class="col-auto">
 				    <button onclick="window.location.href='logout'" class="btn btn-outline-secondary w-100" type="button">Logout</button>
@@ -111,15 +111,14 @@
 		     
 		    </div>
 		  </div> -->
-         <% 
-      // Assuming 'user' is an object containing user details, including the role
-	      	User u = (User) session.getAttribute("user");
-	      if (u != null && u.getRole().equals("manager")) { %>
-	        <a class="nav-link text-dark" href="manage.jsp">Manage</a>
-	        
-      <% } else if(u!=null&&u.getRole().equals("director")){%>
-          <a class="nav-link text-dark" href="sale.jsp">Sale of stores</a>
-		<%}%>
+		        <% 
+		   // Assuming 'user' is an object containing user details, including the role
+		   User u = (User) session.getAttribute("user");
+		   if (u != null && u.getRole().equals("manager")) { %>
+		      <a class="nav-link text-dark" href="manage.jsp">Manage</a>
+		<% } else if(u != null && u.getRole().equals("director")) { %>
+		      <a class="nav-link text-dark" href="sale.jsp">Sale of stores</a>
+		<% } %>
         </div>
       </div>
 
