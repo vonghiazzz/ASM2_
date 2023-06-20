@@ -1,0 +1,7 @@
+DAO: Data access object
+
+select: Lay tat cac doi tuong
+selectById: Lay doi tuong theo Id
+insert
+delete
+update

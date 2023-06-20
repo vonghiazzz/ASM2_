@@ -1,0 +1,21 @@
+Shop
+ idShop
+ name
+ address
+ sale
+
+Product
+ id
+ name
+ category
+ price
+ quantity
+ idShop
+ 
+Category
+ id
+ name
+
+
+
+ 

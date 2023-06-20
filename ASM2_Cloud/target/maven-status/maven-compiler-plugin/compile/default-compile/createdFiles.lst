@@ -1,0 +1,15 @@
+model\Shop.class
+controller\Logout.class
+util\encode.class
+database\DAOInterface.class
+database\UserDAO.class
+database\JDBCUtil.class
+database\CategoryDAO.class
+model\Product.class
+database\ShopDAO.class
+model\Category.class
+controller\Login.class
+database\ProductDAO.class
+controller\InsertProduct.class
+controller\Register.class
+model\User.class
