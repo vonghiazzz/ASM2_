@@ -45,8 +45,6 @@
         e.printStackTrace();
       } finally {
         JDBCUtil.closeConnection(connection);
-        if (statement != null) statement.close();
-        if (resultSet != null) resultSet.close();
       }
     %>
   </div>
