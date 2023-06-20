@@ -14,9 +14,9 @@ public class JDBCUtil{
 		try {
 			DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 			
-			String url = "jdbc:mySQL://co28d739i4m2sb7j.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/i160qey3ydq1dyjk";
-			String username = "eev69d6d07apziy5";
-			String password = "o77a6lyvgbax2uts";
+			String url = "jdbc:mySQL://vkh7buea61avxg07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/oupigw63rk1qbydd";
+			String username = "ogewzg72n08k58bm";
+			String password = "td22keh9ktvpdx68";
 			
 			c = DriverManager.getConnection(url,username,password);
 		} catch (Exception e) {
